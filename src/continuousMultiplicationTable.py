@@ -12,15 +12,18 @@
 
 def multiplicationTable(number):
     print('calculate {}-th multiplication table'.format(number))
+    # Make a loop that repeat from 1 to 9
     for i in range(10):
         print('{} x {} = {}'.format(number, i, number * i))
 
 
 def main():
     levelOfMultiplication = int(1)
+    # Make a loop being continuos until levelOfMultiplication becomes 0
     while levelOfMultiplication is not 0:
         print('which level of multiplication table do you want?(1~9)?')
         levelOfMultiplication = int(input())
+        # Break loop when levelOfMultiplication becomes 0
         if levelOfMultiplication is 0:
             break
         multiplicationTable(levelOfMultiplication)

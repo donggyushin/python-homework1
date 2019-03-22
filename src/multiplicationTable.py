@@ -8,12 +8,13 @@
 
 def calculateMultiplication(number):
     print('Calculate ', number, '-th multiplication table')
+    # make loop that repeat from 1 to 9
     for item in range(1, 10):
         print("{} x {} = {}" .format(number, item, number*item))
 
 
 def main():
-    print('Which level of multiplication table do you want?')
+    print('Which level of multiplication table do you want to execute?')
     levelOfMultiplication = int(input())
     calculateMultiplication(levelOfMultiplication)
 

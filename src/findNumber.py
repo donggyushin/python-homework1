@@ -6,6 +6,10 @@
 # Print 'Correct' when user entered correct number.
 import random
 
+# function that returns 1 in case of the first parameter is bigger,
+# -1 in case of the second parameter is bigger,
+# 0 in case of the two parameters are same each other
+
 
 def compareNumbers(computerNumber, userNumber):
     if computerNumber > userNumber:
@@ -14,6 +18,8 @@ def compareNumbers(computerNumber, userNumber):
         return -1
     else:
         return 0
+
+# generate random number between 1 and 100
 
 
 def generateRandomNumber():
@@ -25,10 +31,12 @@ def main():
     print('Enter any number between 1 and 100')
     userNumber = int(input())
     result = compareNumbers(computerNumber, userNumber)
+    # quit the program if the result is 0
     if result is 0:
         print('Correct!')
         return
     else:
+        # loop that will be quit when the result is 0
         while not(result is 0):
             if result is -1:
                 print('Too big')

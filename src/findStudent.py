@@ -8,6 +8,8 @@
 # lower than 14 and upper than 8, elementary shcool student
 # else, print 'you are not a student. '
 
+# function that calculates age from the year user entered
+
 
 def calculateAge(year):
     return 2020 - year + 1
